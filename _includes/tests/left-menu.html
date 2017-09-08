@@ -1,0 +1,16 @@
+<nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+  <ul class="nav nav-pills flex-column">
+	{% for p in site.pages %}
+		{% if p.url contains menu-folder %}
+			{% assign node_url_parts = p.url | split: '/' %}
+			{% assign node_url_parts_size = node_url_parts | size %}
+			{% assign filename = node_url_parts | last %}
+			{% if filename != 'index.html' %}
+				<li class="nav-item">
+				  <a {% if p.url == page.url %} class=" nav-link active" {% else %} class="nav-link" {% endif %} href="{{ p.url }}">{{ p.title }}</a>
+				</li>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+  </ul>
+</nav>
