@@ -10,7 +10,7 @@
   <a class="navbar-brand" href="#">JDemetra+</a>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-	<ul class="navbar-nav mr-auto">		  
+	<!--<ul class="navbar-nav mr-auto">		  
 	  {% for node in site.pages %}
         {% assign node_url_parts = node.url | split: '/' %}
         {% assign node_url_parts_size = node_url_parts | size %}
@@ -20,6 +20,20 @@
 			<a class="nav-link" href="{{ node.url }}">{{ node.title }}</a>
 		  </li>
         {% endif %}
+    {% endfor %}
+	</ul>-->
+	
+	<ul class="navbar-nav mr-auto">		 
+		  <li {% if p.url == page.url %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+			<a class="nav-link" href="{{ node.url }}">{{ node.title }}</a>
+		  </li>	
+		  {% assign pages = site.pages | sort: 'navigation_weight' %}
+		  {% for page in pages %}
+		  {% if page.navigation_weight %}
+			<li {% if p.url == page.url %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+				<a class="nav-link" href="{{ page.url }}">{{ page.title }}</a>
+			</li>
+		  {% endif %}
     {% endfor %}
 	</ul>
   </div>

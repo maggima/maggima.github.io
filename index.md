@@ -4,5 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 title: Home
-permalink: "/index.html"
+navigation_weight: 1
 ---
