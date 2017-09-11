@@ -13,10 +13,10 @@
 		{% for menu in site.data.navigation %}
 		{% if menu.subitems != null %}
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="{{ site.url }}{{ menu.href }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ menu.title }}</a>
+				<a class="nav-link dropdown-toggle" href="{{ menu.href }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ menu.title }}</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 				{% for item in menu.subitems %}
-					<a class="dropdown-item" href="{{ site.url }}{{ menu.href }}{{ item.href }}">{{ item.title }}</a>
+					<a class="dropdown-item" href="{{ menu.href }}{{ item.href }}">{{ item.title }}</a>
 				{% endfor %}
 				</div>
 			</li>
