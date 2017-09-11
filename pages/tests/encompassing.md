@@ -1,8 +1,9 @@
 ---
-layout: tests
-title: Emcompassing Test
+layout: left-menu
+title: Encompassing Test
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Description of Encompassing Test
+order: 3
 ---
 
 # Encompassing Test 

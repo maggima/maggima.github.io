@@ -1,8 +1,9 @@
 ---
-layout: tests
+layout: left-menu
 title: Bias Test
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Description of Bias Test
+order: 1
 ---
 
 # Bias 

@@ -1,8 +1,9 @@
 ---
-layout: tests
+layout: left-menu
 title: Basic Notation
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Introducing the notation
+order: 2
 ---
 
 # Notation 
@@ -32,11 +33,11 @@ expectations given by the parameter vector $$ \theta $$ .
 In forecasting comparisons involving competing forecasts resulting from the same information set, the subindex $i$ will be removed because it does not play a role. 
 One could test the following hypothesis involving forecast errors: 
 
-{: .table .table-bordered .table-striped}
+{: .table .table-bordered}
 |   Test	|Null   Hypothesis	|  JDemetra*+* class `AccuracyTests` is extended by  |
 |---	    |---	    |---      |
 |   Unbiasedness	| $$ E[e_{t}]=0  $$	|      `BiasTest`                        |
-|   Autocorrelation	| $$ E[e_{t}e_{t-1}]=0 $$    	|         `EfficiencyTest`         |  
+|   Autocorrelation	| $$ E[e_{t}e_{t-1}]=0 $$    	|         `EfficiencyTest`         |
 |   Equality  in  squared  errors	|  $$ E[e^2_{t}-\breve{e}^2_{t}]=0  $$  	|       `DieboldMarianoTest`     |
 |   Forecast  $$ \hat{y}_{t} $$  encompases   $$ \breve{y}_{t} $$ |   $$ E[(e_{t}-\breve{e}_{t})e_{t}]=0  $$  	|   `EncompassingTest`         |
 |   Forecast   $$\breve{y}_{t}$$   encompases   $$ \hat{y}_{t} $$ |   $$ E[(\breve{e}_{t}-e_{t})\breve{e}_{t}]=0 $$ |     `EncompassingTest`   |

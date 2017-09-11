@@ -1,8 +1,9 @@
 ---
-layout: tests
+layout: left-menu
 title: Diebold-Mariano Test
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Description of Diebold-Mariano Test
+order: 4
 ---
 
 # Diebold-Mariano Test 

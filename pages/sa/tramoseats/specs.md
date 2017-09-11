@@ -1,9 +1,9 @@
 ---
 layout: left-menu
-title: Introduction
+title: Specifications
 tagline: technical documentation for JDemetra+ using GitHub Pages
-description: Tests
-order: 0
+description: TramoSeats specifications
+order: 1
 ---
 
- ![OverviewTags](/assets/img/Nowcasting.gif)
+## {{page.description}}
