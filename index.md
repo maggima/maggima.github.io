@@ -9,7 +9,7 @@ navigation_weight: 1
 
 # Econometric software for seasonal adjustment and other time series methods (JDemetra+)
 
-[![Download](https://img.shields.io/github/release/jdemetra/jdemetra-app.svg)](https://github.com/jdemetra/jdemetra-app/releases/latest)
+[![Download](https://img.shields.io/github/release/jdemetra/jdemetra-app.svg)](https://github.com/jdemetra/jdemetra-app/releases/latest) ![Travis](https://img.shields.io/travis/jdemetra/jdemetra-app.svg) [![Github All Releases](https://img.shields.io/github/downloads/jdemetra/jdemetra-app/total.svg)](https://github.com/jdemetra/jdemetra-app/releases)
 
 JDemetra+ is a new tool for seasonal adjustment (SA) developed by the National Bank of Belgium (NBB) in cooperation with the Deutsche Bundesbank and Eurostat in accordance with the Guidelines of the European Statistical System (ESS).
 

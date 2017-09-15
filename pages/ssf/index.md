@@ -1,9 +1,8 @@
 ---
 layout: left-menu
-title: Specifications
+title: SSF
 tagline: technical documentation for JDemetra+ using GitHub Pages
-description: TramoSeats specifications
-order: 1
+description: State space model
+order: 0
 ---
 
-## {{page.description}}

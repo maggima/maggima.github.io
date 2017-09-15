@@ -3,7 +3,7 @@ layout: left-menu
 title: Bias Test
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Description of Bias Test
-order: 1
+order: 2
 ---
 
 # Bias 
