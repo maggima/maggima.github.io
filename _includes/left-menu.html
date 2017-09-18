@@ -3,12 +3,12 @@
   {% assign groups = (site.pages | where_exp:"p", "p.url contains include.folder" | group_by: "category" | sort: 'category' | reverse ) %}
 	{% for g in groups %}
 		{% if g.name != "" %}
-		<li class='sub-menu'>
+		<li class="sub-menu">
 			<a href="#">{{g.name}}<div class='fa fa-caret-down right'></div></a>
-			<ul>
+			<ul {% if g.name == page.category %} class="opened" {% endif %}>
 			{% assign sorted_pages = (g.items | sort:'order' ) %}
 			{% for p in sorted_pages %}
-				<li><a {% if p.url == page.url %} class=" nav-link active" {% else %} class="nav-link" {% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
+				<li><a {% if p.url == page.url %} class="active" {% else %} {% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
 			{% endfor %}
 			</ul>
 		</li>

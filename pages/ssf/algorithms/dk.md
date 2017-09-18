@@ -3,10 +3,11 @@ layout: left-menu
 title: Diffuse initialization
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: State space model. Diffuse initialization (Durbin Koopman)
+category: Initialization
 order: 200
 ---
 
-We describe below the diffuse initialization of Durbin-Koopman and a variant called partial square root initialization
+We describe below the diffuse initialization of Durbin-Koopman and a variant that we call "partial square root initialization"
 
 ### DK initialization
 
@@ -88,3 +89,11 @@ $$\begin{pmatrix} 0 \\ B_t \end{pmatrix} \rightarrow \begin{pmatrix} Z_t B_t \\ 
 Contrary to the usual array algorithm, we don’t compute a complete triangularization: processing the first rows, which correspond to the measurement equations, is indeed sufficient. So, in the case of a univariate series, we just have to use a single householder reflection to compute the next $B_{t+1}$. 
 To be noted that that formulation shows in an obvious way that the rank of $B_t$ will decrease by $rank(F_{\infty t})$ at each step. That implies that, after every iteration, the matrix $B_t$ becomes smaller and the computations less expensive.
 
+### Implementation
+
+The Diffuse initialization is implemented in several classes
+
+* The "Durbin Koopman" initialization of the filter is provided by the class `demetra.ssf.dk.DurbinKoopmanInitializer` 
+* The corresponding "Durbin Koopman" smoother is provided by the class `demetra.ssf.dk.DiffuseSmoother` 
+* The "Partial square root" initialization of the filter is provided by the class  `demetra.ssf.dk.sqrt.DiffuseSquareRootInitializer`
+* The corresponding diffuse square root smoother is provided by the class  `demetra.ssf.dk.sqrt.DiffuseSquareRootSmoother`.

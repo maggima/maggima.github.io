@@ -3,7 +3,6 @@ layout: left-menu
 title: Tramo-Seats
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: TramoSeats
-category: Tramo-Seats
 order: 200
 ---
 

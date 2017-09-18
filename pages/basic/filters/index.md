@@ -1,8 +1,8 @@
 ---
 layout: left-menu
-title: SSF
+title: Introduction
 tagline: technical documentation for JDemetra+ using GitHub Pages
-description: State space model
+description: Linear filters
 order: 0
+category: Linear filters
 ---
-

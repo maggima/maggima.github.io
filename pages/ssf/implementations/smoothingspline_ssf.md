@@ -1,4 +1,11 @@
-## State space representation of a cubic spline function
+---
+layout: left-menu
+title: Cubic spline
+tagline: technical documentation for JDemetra+ using GitHub Pages
+description: Cubic spline
+order: 500
+---
+# {{page.description}}
 
 ### Introduction
 
@@ -21,10 +28,8 @@ $$ var(\epsilon_t)= \sigma^2, \quad var(\eta_t)= \sigma^2/\lambda $$
 ### Dynamics
 
 $$ T_t = \begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix} $$
-<br>
 
 $$ V_t = \begin{pmatrix} 1/3 & 1/2 \\ 1/2 & 1 \end{pmatrix} $$
-<br>
 
 $$ T_t = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} $$
 

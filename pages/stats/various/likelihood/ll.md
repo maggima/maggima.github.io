@@ -1,5 +1,13 @@
+---
+layout: left-menu
+title: Likelihood
+tagline: technical documentation for JDemetra+ using GitHub Pages
+description: Likelihood of gaussian models
+category: Likelihood
+order: 10
+---
 
-# Likelihood of gaussian models 
+# {{page.description}}
 
 ## Likelihood of a multivariate normal distribution 
 
@@ -9,6 +17,7 @@ The pdf of a multivariate normal distribution is:
 $$p\left( y \right) = \left( 2 \pi \right)^{-\frac{n}{2}} \vert \Sigma \vert ^{-\frac{1}{2}}e^{ {-\frac{1}{2}y' \Sigma ^{-1} y} } $$
 
 If we set
+
 $$ y' \Sigma ^{-1} y=u'u \:\: or \:\:  L^{-1}y = u $$ 
 
 the log-likelihood is:

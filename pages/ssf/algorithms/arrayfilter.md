@@ -3,6 +3,7 @@ layout: left-menu
 title: Array filter
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: State space model. Array filter
+categoy: Main algorithms
 order: 30
 ---
 # Array algorithm
@@ -38,3 +39,6 @@ $$ u_t = R_t^{-1} e_t $$
 
 $$ a_{t+1} = T_t a_{t} + K_t u_t  $$
 
+### Implementation
+
+The array filter is implemented in the classes `demetra.ssf.array.ArrayFilter` and `demetra.ssf.array.MultivariateArrayFilter`.
