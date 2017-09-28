@@ -4,9 +4,8 @@ title: Ordinary filter
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: State space model. Ordinary Kalman filter
 order: 10
+tags: [ssf, algorithms, filter, kalman]
 ---
-
-# Ordinary filter
 
 Using the usual [notations](./notations.md) we define the ordinary filter as follows:
 

@@ -23,6 +23,17 @@
 	
 	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700'>
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107188065-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-107188065-1');
+	</script>
+
   </head>
 
   <body>
@@ -32,7 +43,11 @@
 	  <div class="row">
 	    {% include left-menu.html folder=current_folder %}
 		<main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+			<h2>{{ page.title }}</h2>
 		  {{ content }}
+		  {% for tag in page.tags %}
+			 <a href="#" class="badge badge-primary">{{ tag }}</a>
+		  {% endfor %}
 		</main>
 	  </div>
 	</div>

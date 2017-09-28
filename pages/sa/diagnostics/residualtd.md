@@ -4,8 +4,8 @@ title: Residual trading days
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Test for residual trading days effects
 order: 200
+tags: [seasonal adjustment, diagnostics, trading days, residual]
 ---
-# {{page.description}}
 
 The new tests are largely based on the diagnostics developed in the last versions of the software Tramo-Seats (A. Maravall).
 

@@ -4,8 +4,9 @@ title: Residual seasonality
 tagline: technical documentation for JDemetra+ using GitHub Pages
 description: Test for residual seasonality
 order: 100
+tags: [seasonal adjustment, diagnostics, residual, seasonality]
+published: falses
 ---
-# {{page.description}}
 
 The new tests are largely based on the diagnostics developed in the last versions of the software Tramo-Seats (A. Maravall).
 
