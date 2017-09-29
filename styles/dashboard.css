@@ -1,6 +1,12 @@
 /*
  * Base structure
  */
+ 
+@media print {
+	.sidebar {
+		display:none !important;
+	}
+}
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
@@ -132,3 +138,6 @@ nav.left ul li.sub-menu ul li a.active {
 .left {
   float: left;
 }
+
+
+img { max-width: 800px;}

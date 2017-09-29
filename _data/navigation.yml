@@ -1,5 +1,7 @@
 - title: "Home"
   href: "/"
+- title: "Quick Start"
+  href: "/pages/quick-start/"
 - title: "Math"
   href: "/pages/basic/"
   subitems:
