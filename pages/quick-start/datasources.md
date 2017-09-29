@@ -6,7 +6,7 @@ order: 3
 
 The default view of the JDemetra+ window, which is displayed after launching the program, is shown below. 
 
-![Text](/assets/img/quick-start/jd+mainwindow.jpg)
+![Text](/assets/img/quick-start/Jd+mainwindow.jpg)
 
 On the left two panels are visible: the **Workspace** panel and the **Providers** panel. The **Providers** panel presents the list of the data sources and organizes the imported series within each data provider. By default, JDemetra+ supports the following data sources:
 * JDBC;
